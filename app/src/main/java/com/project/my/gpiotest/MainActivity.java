@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     fops.write("1".getBytes());
                     Log.i("Log","结束");
                     Log.i("Log","结束");
+                    Log.i("Log","结束");
                     fops.flush();
                     fops.close();
                 }catch (Exception e){
