@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     FileOutputStream fops =new FileOutputStream("/sys/class/leds/NET_MODE/brightness");
                     fops.write("1".getBytes());
                     Log.i("Log","结束");
+                    Log.i("Log","结束");
                     fops.flush();
                     fops.close();
                 }catch (Exception e){
