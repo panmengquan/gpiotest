@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -33,8 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.button1:
                 try{
+                    Log.i("Log","开始");
                     FileOutputStream fops =new FileOutputStream("/sys/class/leds/NET_MODE/brightness");
                     fops.write("1".getBytes());
+                    Log.i("Log","结束");
                     fops.flush();
                     fops.close();
                 }catch (Exception e){
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try{
                     FileOutputStream fops =new FileOutputStream("/sys/class/leds/NET_MODE/brightness");
                     fops.write("0".getBytes());
+
                     fops.flush();
                     fops.close();
                 }catch (Exception e){
