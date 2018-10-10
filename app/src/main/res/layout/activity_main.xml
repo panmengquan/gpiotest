@@ -17,7 +17,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="157dp"
-        android:text="net_mode点亮" />
+        android:text="net_mode点亮123" />
 
     <Button
         android:id="@+id/button2"
